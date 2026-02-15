@@ -1,22 +1,166 @@
-
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mick Jobs — Signal Frames™</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- keep your global styles, but bust cache -->
+  <link rel="stylesheet" href="style.css?v=11" />
+
+  <!-- Preload brand mark for instant feel -->
+  <link rel="preload" as="image" href="assets/mick-logo.png.JPG">
+
+  <style>
+    :root{
+      --bg:#000;
+      --fg:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.55);
+      --muted2:rgba(255,255,255,.35);
+      --line:rgba(255,255,255,.14);
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display","SF Pro Text", system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .wrap{
+      min-height:100vh;
+      max-width:980px;
+      margin:0 auto;
+      padding: 22px 18px 34px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:22px;
+    }
+
+    /* top area */
+    .brand{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin-top: 6px;
+    }
+    .brand img{
+      width: 360px;
+      max-width: 86vw;
+      height:auto;
+      display:block;
+      opacity:.95;
+      filter: drop-shadow(0 10px 40px rgba(0,0,0,.6));
+    }
+
+    /* hero text */
+    .hero{
+      text-align:left;
+      margin-top: 6px;
+    }
+    h1{
+      margin:0;
+      font-size:56px;
+      line-height:1.04;
+      letter-spacing:-0.03em;
+      font-weight:700;
+    }
+    .sub{
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1.35;
+    }
+    .sub small{
+      display:block;
+      margin-top:8px;
+      color: var(--muted2);
+      font-size: 16px;
+    }
+
+    /* actions */
+    .actions{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      flex-wrap:wrap;
+      margin-top: 8px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.24);
+      color: rgba(255,255,255,.9);
+      text-decoration:none;
+      letter-spacing:.14em;
+      text-transform: uppercase;
+      font-size: 12px;
+      background: rgba(255,255,255,.04);
+      backdrop-filter: blur(10px);
+    }
+    .btn:hover{ border-color: rgba(255,255,255,.38); }
+
+    .link{
+      color: rgba(255,255,255,.6);
+      text-decoration:none;
+      border-bottom: 1px solid rgba(255,255,255,.18);
+      padding-bottom:2px;
+      font-size: 14px;
+      letter-spacing:.02em;
+    }
+    .link:hover{ color: rgba(255,255,255,.78); border-bottom-color: rgba(255,255,255,.3); }
+
+    /* subtle footer */
+    .foot{
+      margin-top:auto;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: rgba(255,255,255,.28);
+      font-size: 12px;
+      letter-spacing:.06em;
+      text-transform: uppercase;
+    }
+
+    /* mobile tuning */
+    @media (max-width: 480px){
+      h1{ font-size: 46px; }
+      .sub{ font-size: 18px; }
+      .brand img{ width: 320px; }
+    }
+  </style>
 </head>
 
-<body class="dark">
+<body>
+  <main class="wrap">
 
-  <section class="hero-index">
-    <h1>Mick Jobs</h1>
-    <p>Signal Frames™</p>
-    <p>Chapter I — 2025</p>
+    <!-- Brand mark -->
+    <div class="brand">
+      <!-- IMPORTANT: rename file if needed.
+           Put your logo exactly at: /assets/mick-logo.png.JPG  -->
+      <img src="assets/mick-logo.png.JPG" alt="Mick logo" loading="eager" decoding="async">
+    </div>
 
-    <a href="canvases.html" class="enter-btn">View Collection</a>
-  </section>
+    <!-- Text -->
+    <section class="hero">
+      <h1>Mick Jobs</h1>
+      <p class="sub">
+        Signal Frames™
+        <small>Chapter I — 2025</small>
+      </p>
 
+      <div class="actions">
+        <a class="btn" href="canvases.html">View Collection</a>
+        <a class="link" href="https://t.me/mickjobs" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </section>
+
+    <div class="foot">mickjobs.store</div>
+  </main>
 </body>
 </html>
