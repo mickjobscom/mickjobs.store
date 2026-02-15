@@ -3,236 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mick Jobs — 
-    Signal Frames™</title>
+  <title>Mick Jobs — Signal Frames™</title>
   <link rel="stylesheet" href="style.css" />
 
-  <!-- Make first paints feel instant -->
   <link rel="preload" as="image" href="assets/canvas/Mick-01.JPG">
   <link rel="preload" as="image" href="assets/canvas/Mick-02.JPG">
 </head>
 
 <body class="dark">
 
-  <!-- Top / Back -->
-  <header class="topbar" style="position: sticky; top: 0; z-index: 10; background: rgba(0,0,0,0.72); backdrop-filter: blur(10px);">
-    <div class="topbar-inner" style="max-width: 980px; margin: 0 auto; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;">
-      <a href="index.html" class="back" style="text-decoration:none; color: rgba(255,255,255,0.75); font-size: 14px; letter-spacing: .02em;">
-        ← Home
-      </a>
-      <div class="topbar-title" style="color: rgba(255,255,255,0.55); font-size: 12px; letter-spacing: .08em; text-transform: uppercase;">
-        Signal Frames™
-      </div>
-      <a href="https://t.me/mickjobs" target="_blank" rel="noopener" class="topbar-contact" style="text-decoration:none; color: rgba(255,255,255,0.75); font-size: 14px; letter-spacing: .02em;">
-        Telegram
-      </a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="topbar-link">← Home</a>
+      <div class="topbar-title">Signal Frames™</div>
+      <a href="https://t.me/mickjobs" target="_blank" rel="noopener" class="topbar-link">Telegram</a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" style="max-width: 980px; margin: 0 auto; padding: 56px 18px 26px;">
-    <h1 style="margin:0; font-size: 44px; line-height: 1.05; letter-spacing: -0.02em;">Mick Jobs — Signal Frames™</h1>
-    <p style="margin:16px 0 0; color: rgba(255,255,255,0.72);">Выставка: «Тихий Ум»</p>
-    <p style="margin:8px 0 0; color: rgba(255,255,255,0.55);">Москва, 2025</p>
-    <p style="margin:18px 0 0; color: rgba(255,255,255,0.65);">Первая серия художественного исследования.</p>
+  <section class="hero">
+    <h1>Mick Jobs — Signal Frames™</h1>
+    <p class="hero-line">Выставка: «Тихий Ум»</p>
+    <p class="hero-muted">Москва, 2025</p>
+    <p class="hero-muted">Первая серия художественного исследования.</p>
   </section>
 
-  <!-- Gallery -->
-  <main class="gallery" style="max-width: 980px; margin: 0 auto; padding: 10px 18px 50px;">
-    
-    <!-- Mick I -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img
-        src="assets/canvas/Mick-01.JPG"
-        alt="Mick I"
-        loading="eager"
-        decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);"
-      />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px; letter-spacing: -0.01em;">Mick I</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+  <main class="gallery">
+
+    <article class="canvas">
+      <img src="assets/canvas/Mick-01.JPG" alt="Mick I" loading="eager" decoding="async">
+      <div class="meta">
+        <h2>Mick I</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick II -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-02.JPG" alt="Mick II" loading="eager" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick II</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-02.JPG" alt="Mick II" loading="eager" decoding="async">
+      <div class="meta">
+        <h2>Mick II</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick III -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-03.JPG" alt="Mick III" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick III</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-03.JPG" alt="Mick III" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick III</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick IV -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-04.JPG" alt="Mick IV" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick IV</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-04.JPG" alt="Mick IV" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick IV</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick V -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-05.JPG" alt="Mick V" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick V</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-05.JPG" alt="Mick V" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick V</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick VI -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-06.JPG" alt="Mick VI" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick VI</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-06.JPG" alt="Mick VI" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick VI</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick VII -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-07.JPG" alt="Mick VII" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick VII</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-07.JPG" alt="Mick VII" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick VII</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick VIII -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-08.JPG" alt="Mick VIII" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick VIII</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-08.JPG" alt="Mick VIII" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick VIII</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick IX -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-09.JPG" alt="Mick IX" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick IX</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-09.JPG" alt="Mick IX" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick IX</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick X -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-10.JPG" alt="Mick X" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick X</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-10.JPG" alt="Mick X" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick X</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick XI -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-11.JPG" alt="Mick XI" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick XI</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas">
+      <img src="assets/canvas/Mick-11.JPG" alt="Mick XI" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick XI</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
-    <!-- Mick XII -->
-    <article class="canvas" style="padding: 34px 0; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08);">
-      <img src="assets/canvas/Mick-12.JPG" alt="Mick XII" loading="lazy" decoding="async"
-        style="width:100%; height:auto; display:block; border-radius: 10px; background: rgba(255,255,255,0.03);" />
-      <div class="meta" style="padding-top: 18px;">
-        <h2 style="margin:0; font-size: 28px;">Mick XII</h2>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.65);">40×60 cm</p>
-        <p style="margin:6px 0 0; color: rgba(255,255,255,0.55);">Spray / Stencil / Tape</p>
-        <p class="price" style="margin:14px 0 0; font-size: 18px; letter-spacing: 0.02em; color: rgba(255,255,255,0.92);">50 000₽</p>
-        <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">2025</p>
-        <p class="status" style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Available</p>
+    <article class="canvas canvas-last">
+      <img src="assets/canvas/Mick-12.JPG" alt="Mick XII" loading="lazy" decoding="async">
+      <div class="meta">
+        <h2>Mick XII</h2>
+        <p>40×60 cm</p>
+        <p>Spray / Stencil / Tape</p>
+        <p class="price">50 000₽</p>
+        <p class="status">2025 · Available</p>
       </div>
     </article>
 
   </main>
 
-  <!-- Closing -->
-  <section class="closing" style="max-width: 980px; margin: 0 auto; padding: 26px 18px 60px;">
-    <p style="margin:0; color: rgba(255,255,255,0.72);">Серия завершена.</p>
-    <p style="margin:10px 0 0; color: rgba(255,255,255,0.55);">Исследование продолжается.</p>
+  <section class="closing">
+    <p class="closing-strong">Серия завершена.</p>
+    <p class="closing-muted">Исследование продолжается.</p>
 
-    <div class="contact" style="margin-top: 24px;">
-      <p style="margin:0; color: rgba(255,255,255,0.55);">Связь:</p>
-      <p style="margin:10px 0 0;">
-        <a href="https://t.me/mickjobs" target="_blank" rel="noopener"
-          style="color: rgba(255,255,255,0.9); text-decoration:none; border-bottom: 1px solid rgba(255,255,255,0.25);">
-          t.me/mickjobs
-        </a>
-      </p>
-      <p style="margin:18px 0 0;">
-        <a href="index.html" style="color: rgba(255,255,255,0.65); text-decoration:none; border-bottom: 1px solid rgba(255,255,255,0.18);">
-          ← Back to Home
-        </a>
-      </p>
+    <div class="contact">
+      <p class="closing-muted">Связь:</p>
+      <p><a class="link" href="https://t.me/mickjobs" target="_blank" rel="noopener">t.me/mickjobs</a></p>
+      <p><a class="link muted-link" href="index.html">← Back to Home</a></p>
     </div>
   </section>
 
