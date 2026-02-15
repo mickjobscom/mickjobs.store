@@ -1,138 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mick Jobs — Signal Frames™</title>
 
-  <link rel="stylesheet" href="style.css?v=12" />
+  <!-- Cache hint -->
+  <meta http-equiv="Cache-Control" content="max-age=31536000">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preload logo for instant feel -->
   <link rel="preload" as="image" href="assets/mick-logo.png.JPG">
-
-  <style>
-    :root{
-      --bg:#000;
-      --fg:rgba(255,255,255,.92);
-      --muted:rgba(255,255,255,.55);
-      --line:rgba(255,255,255,.18);
-    }
-
-    body{
-      margin:0;
-      background:#000;
-      color:var(--fg);
-      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,sans-serif;
-    }
-
-    .wrap{
-      min-height:100vh;
-      max-width:980px;
-      margin:0 auto;
-      padding:40px 20px 60px;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-    }
-
-    .brand{
-      display:flex;
-      justify-content:center;
-      margin-bottom:20px; /* ближе к тексту */
-    }
-
-    .brand img{
-      width:420px;
-      max-width:85vw;
-      height:auto;
-      opacity:.95;
-    }
-
-    h1{
-      margin:0;
-      font-size:56px;
-      letter-spacing:-0.03em;
-    }
-
-    .sub{
-      margin-top:14px;
-      color:var(--muted);
-      font-size:20px;
-    }
-
-    .sub small{
-      display:block;
-      margin-top:8px;
-      font-size:16px;
-      opacity:.7;
-    }
-
-    .actions{
-      margin-top:28px;
-      display:flex;
-      flex-direction:column; /* теперь вертикально */
-      align-items:flex-start;
-      gap:18px;
-    }
-
-    .btn{
-      padding:14px 24px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,.25);
-      text-decoration:none;
-      color:white;
-      font-size:12px;
-      letter-spacing:.15em;
-      text-transform:uppercase;
-      background:rgba(255,255,255,.05);
-    }
-
-    .btn:hover{
-      border-color:rgba(255,255,255,.4);
-    }
-
-    .telegram{
-      font-size:14px;
-      color:rgba(255,255,255,.65);
-      text-decoration:none;
-      border-bottom:1px solid rgba(255,255,255,.25);
-      padding-bottom:2px;
-    }
-
-    .telegram:hover{
-      color:white;
-    }
-
-    @media(max-width:480px){
-      h1{font-size:46px;}
-      .brand img{width:360px;}
-    }
-
-  </style>
 </head>
 
-<body>
+<body class="dark">
+  <main class="shell">
 
-  <main class="wrap">
+    <!-- Architectural stack -->
+    <section class="hero">
+      <div class="mark">
+        <img
+          src="assets/mick-logo.png.JPG"
+          alt="Mick logo"
+          class="logo"
+          decoding="async"
+          fetchpriority="high"
+        />
+      </div>
 
-    <!-- Logo -->
-    <div class="brand">
-      <img src="assets/mick-logo.png.JPG" alt="Mick logo">
-    </div>
+      <h1 class="title">Mick Jobs</h1>
+      <p class="sub">Signal Frames™</p>
+      <p class="sub2">Chapter I — 2025</p>
 
-    <!-- Text -->
-    <section>
-      <h1>Mick Jobs</h1>
-      <p class="sub">
-        Signal Frames™
-        <small>Chapter I — 2025</small>
-      </p>
-
-      <div class="actions">
-        <a class="btn" href="canvases.html">View Collection</a>
-        <a class="telegram" href="https://t.me/mickjobs" target="_blank">Telegram</a>
+      <div class="cta">
+        <a class="btn" href="canvases.html">VIEW COLLECTION</a>
+        <a class="link" href="https://t.me/mickjobs" target="_blank" rel="noopener">Telegram</a>
       </div>
     </section>
 
   </main>
+
+  <style>
+    /* --- Architectural home --- */
+    :root{
+      --bg:#000;
+      --fg:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.55);
+      --muted2:rgba(255,255,255,.38);
+      --line:rgba(255,255,255,.14);
+      --line2:rgba(255,255,255,.10);
+    }
+
+    html,body{
+      height:100%;
+      background:var(--bg);
+      margin:0;
+    }
+
+    body{
+      color:var(--fg);
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text",Inter,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* Keeps everything aligned like a grid */
+    .shell{
+      min-height:100vh;
+      display:flex;
+      align-items:flex-end;
+      justify-content:center;
+      padding:56px 18px 72px;
+      box-sizing:border-box;
+    }
+
+    .hero{
+      width:min(980px, 100%);
+    }
+
+    /* vertical rhythm */
+    .mark{
+      display:flex;
+      justify-content:flex-start;
+      margin:0 0 18px;
+    }
+
+    .logo{
+      width:220px;          /* architectural size */
+      max-width:52vw;       /* responsive */
+      height:auto;
+      display:block;
+      opacity:.96;
+      transform: translateY(6px); /* pulls closer to typography */
+      filter: drop-shadow(0 8px 30px rgba(0,0,0,.55));
+    }
+
+    .title{
+      margin:0;
+      font-size:clamp(46px, 8.2vw, 72px);
+      line-height:1.02;
+      letter-spacing:-0.03em;
+    }
+
+    .sub{
+      margin:18px 0 0;
+      font-size:clamp(16px, 2.7vw, 22px);
+      color:var(--muted);
+      letter-spacing:.01em;
+    }
+
+    .sub2{
+      margin:10px 0 0;
+      font-size:clamp(14px, 2.4vw, 20px);
+      color:var(--muted2);
+      letter-spacing:.01em;
+    }
+
+    .cta{
+      margin-top:34px;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:16px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      color:rgba(255,255,255,.92);
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:14px 26px;
+      font-size:13px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      background:rgba(255,255,255,.03);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+      width: fit-content;
+    }
+
+    .btn:active{
+      transform: translateY(1px);
+    }
+
+    .btn:hover{
+      border-color:rgba(255,255,255,.22);
+      background:rgba(255,255,255,.06);
+    }
+
+    .link{
+      text-decoration:none;
+      color:rgba(255,255,255,.68);
+      font-size:15px;
+      letter-spacing:.01em;
+      border-bottom:1px solid var(--line2);
+      padding-bottom:2px;
+      width: fit-content;
+    }
+
+    .link:hover{
+      color:rgba(255,255,255,.9);
+      border-bottom-color:rgba(255,255,255,.22);
+    }
+  </style>
 
 </body>
 </html>
