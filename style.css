@@ -132,7 +132,61 @@ body.dark {
 }
 
 .closing {
+
   text-align: center;
   padding: 100px 20px;
   opacity: 0.6;
+}
+
+/* kill default link colors */
+a, a:visited { color: inherit; }
+a { text-decoration: none; }
+
+/* index layout */
+.hero-index {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 64px 24px;
+  max-width: 720px;
+}
+
+.hero-index h1 {
+  font-size: 44px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0 0 20px 0;
+}
+
+.hero-index p {
+  margin: 6px 0;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+/* button */
+.enter-btn {
+  margin-top: 42px;
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid rgba(255,255,255,0.75);
+  border-radius: 999px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.enter-btn:active {
+  transform: scale(0.98);
+}
+
+@media (min-width: 700px) {
+  .hero-index { padding: 88px 56px; }
+  .hero-index h1 { font-size: 56px; }
 }
