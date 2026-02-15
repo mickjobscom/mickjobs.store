@@ -73,3 +73,66 @@ footer {
   opacity:0.4;
   font-size:12px;
 }
+
+body.dark {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+}
+
+.hero {
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  opacity: 0.6;
+  margin: 4px 0;
+}
+
+.gallery {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.canvas {
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.canvas img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+.meta h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.meta p {
+  opacity: 0.6;
+  margin: 2px 0;
+}
+
+.status {
+  margin-top: 10px;
+  opacity: 1;
+}
+
+.closing {
+  text-align: center;
+  padding: 100px 20px;
+  opacity: 0.6;
+}
