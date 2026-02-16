@@ -627,4 +627,14 @@ a { text-decoration: none; }
 
 .cta {
   margin-top: 26px;
+  
+}
+
+
+/* Exhibition — bottom spacing */
+
+.back-home {
+    display: inline-block;
+    margin-top: 80px;   /* отступ от последней фотографии */
+    margin-bottom: 120px; /* воздух внизу страницы */
 }
